@@ -1,0 +1,57 @@
+.my-review-list-container {
+  margin-top: 30px;
+}
+
+.list-of-reviews-dashboard {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-of-reviews-dashboard > li {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  align-items: center;
+}
+
+.review-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-of-reviews-dashboard > li > .action-button-review {
+  display: flex;
+  gap: 20px;
+}
+
+.list-of-reviews-dashboard > li > .action-button-review > button {
+  padding: 10px 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header-review-dashboard {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.header-review-dashboard > img {
+  width: 50px;
+  object-fit: cover;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.header-review-dashboard > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.header-review-dashboard > div > h2 {
+  font-size: 1.3rem;
+  color: var(--primary);
+}

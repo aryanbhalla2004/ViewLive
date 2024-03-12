@@ -1,0 +1,155 @@
+.container-for-managment-bb {
+  display: flex;
+  flex-direction: column;
+}
+
+.single-col-management-bb {
+  margin-bottom: 30px;
+}
+
+.single-col-management-bb > h3 {
+  font-weight: 300;
+  font-size: .95rem;
+}
+
+.category-box {
+  border: 1px solid var(--darkBorderColor);
+  border-radius: 4px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 3px 6px;
+  width: fit-content;
+  font-size: .9rem;
+}
+
+.category-box > i {
+  color: var(--primary);
+}
+
+.inputs-holder-below-title-bb {
+  margin-top: 10px;
+  padding: 20px;
+  border: 1px solid var(--darkBorderColor);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.col-2-container-bgeneral, .col-3-container-bgeneral {
+  display: flex;
+  justify-content: center;
+}
+
+.col-3-container-bgeneral {
+  justify-content: space-between
+}
+
+.col-2-container-bgeneral > div {
+  width: 50%;
+}
+
+.col-3-container-bgeneral > div {
+}
+
+.single-item-in-bgeneral {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.single-item-in-bgeneral > span {
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.single-item-in-bgeneral > p {
+  font-weight: 400;
+  text-align: justify;
+  color: var(--darkColor);
+  line-height: 22px;
+}
+
+.manage-ll-dd-images {
+  gap: 10px;
+  display: flex;
+  overflow: hidden;
+  height: 400px;
+  border-radius: 5px;
+}
+
+.manage-ll-dd-images  > .banner-image {
+  display: flex;
+  width: 50%;
+}
+
+.manage-ll-dd-images  > .banner-image >  img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.manage-ll-dd-images > .store-images {
+  width: 50%;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.manage-ll-dd-images > .store-images > .store-img {
+  width: 49%;
+  overflow: hidden;
+  height: 49.5%;
+  display: flex;
+}
+
+.manage-ll-dd-images > .store-images > .store-img > img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  object-fit: cover;
+}
+
+.side-2-col-management {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.side-2-col-management > .side-bar-single-item-location-data {
+  width: 40%;
+  background-color: transparent;
+  border: 1px solid var(--darkBorderColor);
+  border-radius: 4px;
+}
+
+.side-2-col-management > .key-words-list-and-amentities {
+  border: 1px solid var(--darkBorderColor);
+  border-radius: 4px;
+  width: 60%;
+  padding: 35px 30px;
+  padding-bottom: 10px;
+}
+
+.keywords-list-ul-BCreate > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon-list > li{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px !important;
+}
+
+.missing-link {
+  color: var(--lightTextColor);
+  font-weight: 400;
+}
+
+.success-link {
+  color: var(--success);
+  font-weight: 500;
+}

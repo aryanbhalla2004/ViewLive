@@ -1,0 +1,89 @@
+.d-flex {
+  display: flex;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.col-2 {
+  width: 100%;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: .2rem;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.remove-mt {
+  margin-top: 0;
+}
+
+.account-selection-container {
+  padding: 10px 0;
+}
+
+.single-account-selection {
+  border: 1px solid var(--darkBorderColor);
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: .3s;
+  position: relative;
+  border-radius: 5px;
+  user-select: none;
+}
+
+.single-account-selection:active {
+  transform: scale(.95);
+}
+
+.single-account-selection > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-left: 20px;
+}
+
+.single-account-selection > img {
+  max-width: 20%;
+  width: 100%;
+}
+
+.single-account-selection > div > h3 {
+  font-size: 1.04rem;
+  display: flex;
+  align-items: center;
+  transition: .3s;
+}
+
+.single-account-selection > div > p {
+  color: var(--lightTextColor);
+  line-height: 20px;
+}
+
+.light-small-text-below-header {
+  color: var(--lightTextColor);
+  line-height: 23px;
+  font-weight: 300;
+}
+
+
+.active-selection {
+  border-color: var(--primary);
+  background-color: #f4f5fb;
+}
+
+.selected-check {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  padding: 0;
+  font-size: 1.2rem;
+  margin: 0;
+  color: var(--primary);
+}

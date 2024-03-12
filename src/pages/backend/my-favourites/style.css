@@ -1,0 +1,22 @@
+.no-data-found-favorite-db {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  gap: 5px;
+  opacity: .7;
+}
+
+.no-data-found-favorite-db > img {
+  margin-bottom: 20px;
+}
+
+.no-data-found-favorite-db > button {
+  margin-top: 20px;
+  max-width: 200px;
+}
+
+.fav-main-div-db {
+  margin-top: 40px;
+}

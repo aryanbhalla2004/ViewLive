@@ -1,0 +1,202 @@
+
+.hor-scroll-effect {
+  max-width: 500px;
+  max-height: 650px;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  border-radius: 5px;
+  
+}
+
+.confirm-box-report-review {
+  width: 100%;
+  min-width: 500px;
+  padding: 30px;
+  border-radius: 5px;
+  scroll-snap-align: start;
+}
+
+.confirm-box-report-review > .confirm-button-report{
+  width: 100%;
+  margin-top: 20px;
+  background-color: transparent;
+  border: 1px solid var(--danger);
+  color: var(--danger);
+  cursor: pointer;
+  transition: .3s;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.confirm-box-report-review > .confirm-button-report:hover {
+  background-color: var(--danger);
+  color: var(--lightColor);
+}
+
+.report-review-box {
+  scroll-snap-align: start;
+  width: 100%;
+  min-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px;
+}
+
+.report-review-box > ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 20px 0;
+  gap: 15px;
+  margin-bottom: 0;
+}
+
+.report-review-box > ul > li {
+  display: flex;
+  justify-content: space-between;
+  transition: .3s;
+  align-items: center;
+  cursor: pointer;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--darkBorderColor);
+}
+
+.report-review-box > ul > li:hover{
+  padding-right: 20px;
+  text-decoration: underline;
+}
+
+.report-review-box > ul > li:last-child{
+  border-bottom: none;
+}
+
+.report-review-box > ul > li > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left !important;
+}
+
+.report-review-box > ul > li > div > p {
+  font-size: .9rem;
+  text-decoration: none !important;
+  line-height: 21px;
+}
+
+.report-review-box > ul > li > button {
+  background-color: transparent;
+  font-size: 1.5rem;
+  border: none;
+}
+
+.header-report-start {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+
+.header-report-start > button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  color: var(--lightTextColor);
+}
+
+.hor-scroll-effect::-webkit-scrollbar {
+  display: none;
+}
+
+.confirm-header-2-page {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.confirm-header-2-page > button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--lightTextColor);
+  margin-bottom: 10px;
+  margin-left: -5px;
+}
+
+.confirm-header-2-page > h2 {
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.confirm-header-2-page > p {
+  font-size: .9rem;
+  line-height: 22px;
+}
+
+.review-previw-for-report {
+  border: 1px solid var(--darkBorderColor); 
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.review-previw-for-report > div {
+  margin-bottom: 10px;
+}
+
+.review-previw-for-report > p {
+  font-size: .9rem;
+  line-height: 22px;
+}
+
+.review-info-box-report {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.review-info-box-report > h3 {
+  font-size: 1rem;
+}
+
+.review-info-box-report > p {
+  font-size: .9rem;
+}
+
+.success-report-generated-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.success-report-generated-message > img {
+  width: 70%;
+  margin-bottom: 15px;
+}
+
+.success-report-generated-message > button {
+  background-color: transparent;
+  border: none;
+  width: 40%;
+  margin-top: 20px;
+  border-radius: 4px;
+  padding: 10px 0;
+  color: var(--lightColor);
+  background-color: var(--success);
+}

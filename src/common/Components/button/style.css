@@ -1,0 +1,67 @@
+.loader {
+  width: 25px;
+  height: 25px;
+  border: 3px solid #FFF;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+} 
+
+.btnm:disabled {
+  background-color: red;
+}
+
+.check-box {
+  transform: scale(.4);
+  border: 1px solid;
+  display: flex;
+}
+
+/* Styling the input checkbox */
+input[type="checkbox"] {
+  position: relative;
+  appearance: none;
+  width: 100px;
+  height: 50px;
+  background: #a1a0a0;
+  border-radius: 50px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+/* Changing background color when the checkbox is checked */
+input:checked[type="checkbox"] {
+  background: var(--success);
+}
+
+/* Styling the pseudo-element after the checkbox */
+input[type="checkbox"]::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  background: #f2eeee;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
+/* Moving the pseudo-element to the right when the checkbox is checked */
+input:checked[type="checkbox"]::after {
+  left: 50%;
+}

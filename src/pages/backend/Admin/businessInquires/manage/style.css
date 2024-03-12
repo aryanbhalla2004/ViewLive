@@ -1,0 +1,92 @@
+.manage-bb-content-box {
+  margin-top: 40px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.manage-bb-content-box > ul {
+  display: flex;
+  list-style-type: none;
+  user-select: none;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.manage-bb-content-box > ul > li {
+  display: flex;
+}
+
+.manage-bb-content-box > ul > li > a {
+  border: 1px solid var(--darkBorderColor);
+  text-decoration: none;
+  color: var(--lightTextColor);
+  padding: 5px 10px;
+  font-weight: 500;
+  font-size: .95rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.approve-button {
+  color: var(--lightColor);
+  background-color: var(--success);
+}
+
+.reject-button {
+  color: var(--lightColor);
+  background-color: var(--danger);
+}
+
+.popup-box-main-business-inquire {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-box-business-inquire-post {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 4px;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.content-box-business-inquire-post > p {
+  font-weight: 300;
+  line-height: 22px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.content-box-business-inquire-post > .action-buttons-pop {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.content-box-business-inquire-post > .action-buttons-pop > button {
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 300;
+  transition: .3s;
+  border-radius: 4px;
+}
+
+.decline-box > .text-area-box {
+  margin-top: 20px;
+  width: 100%;
+}

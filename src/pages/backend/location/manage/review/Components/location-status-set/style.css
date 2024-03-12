@@ -1,0 +1,37 @@
+.location-status-modal {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 4px;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.location-status-modal > i {
+  font-size: 3rem;
+  color: var(--secondary);
+}
+
+.location-status-modal > h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.location-status-modal > p {
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.action-modal-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  transform: scale(.9);
+  width: 90%;
+}

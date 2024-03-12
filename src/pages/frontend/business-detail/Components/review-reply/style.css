@@ -1,0 +1,91 @@
+.reply-box-container {
+  display: flex;
+  max-width: 800px;
+  max-height: 600px;
+  border-radius: 4px;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--lightColor);
+  height: 100%;
+  flex-direction: column;
+  padding: 20px 40px;
+  justify-content: space-between;
+}
+
+.reply-box-container > ul {
+  width: 100% !important;
+  max-width: 100%;
+}
+
+.reply-form-box-action {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.reply-form-box-action > div {
+  width: 100%;
+
+}
+
+.reply-form-box-action > div > textarea {
+  height: 70px !important;
+}
+
+.close-button-model {
+  position: absolute;
+  top: 30px;
+  background-color: transparent;
+  font-size: 1.2rem;
+  border: none;
+  right: 30px;
+}
+
+.review-reply-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: -25px;
+  padding-left: 30px;
+}
+.vertical-line-reply-section {
+  border-left: 2px solid var(--lightTextColor);
+  height: 30px;
+  display: flex;
+  width: 0;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+.reply-form-box-action > button {
+  color: var(--lightColor);
+  background-color: var(--primary);
+  padding: 20px 30px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.no-reply-message {
+  border: 1px dashed var(--lightTextColor);
+  width: fit-content;
+  padding: 3px 5px;
+  border-radius: 4px;
+  font-size: .9rem;
+  color: var(--lightTextColor);
+}
+
+.reply-header-each-reply-section {
+  display: flex;
+  gap: 15px;
+}
+
+.reply-main-box {
+  margin-bottom: 15px;
+}
+
+.reply-main-box > p {
+  margin-top: 15px;
+  font-size: .9rem;
+}

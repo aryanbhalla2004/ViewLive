@@ -1,0 +1,106 @@
+
+
+.desgine-upload-button {
+  display: flex;
+  gap: 20px;
+}
+
+.desgine-upload-button > label {
+  border: 1px solid;
+  padding: 10px 20px;
+  font-size: .9rem;
+  display: flex;
+  gap: 10px;
+  background-color: var(--primary);
+  color: var(--lightColor);
+  cursor: pointer;
+  transition: .3s;
+  border-radius: 4px;
+}
+
+.desgine-upload-button> label:hover {
+  background-color: var(--primaryHover);
+}
+
+.desgine-upload-button > button {
+  border: none;
+  display: flex;
+  padding: 12px 20px;
+  border-radius: 4px;
+  gap: 10px;
+}
+
+.desgine-upload-button > .modi-btn {
+  background-color: transparent;
+  color: var(--primary);
+  border: 1px solid var(--darkBorderColor);
+}
+
+.desgine-upload-button > .rem-btn { 
+  background-color: var(--danger);
+  color: var(--lightColor);
+}
+
+.crop-container-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 4px;
+  gap: 20px;
+}
+
+.action-button-crop-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.action-button-crop-container > button {
+  border: none;
+  background-color: transparent;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transform: scale(.9);
+}
+
+.action-button-crop-container > button:nth-child(1) {
+  border: 1px solid var(--darkBorderColor);
+}
+
+.action-button-crop-container > button:nth-child(2) {
+  background-color: var(--success);
+  color: var(--lightColor);
+}
+
+.slider-content-scale {
+  margin: 5px 0 20px 0;
+  width: 100%;
+}
+
+.image-rotator-upload-portal {
+  display: flex;
+  gap: 30px;
+}
+
+.image-rotator-upload-portal > button {
+  background-color: var(--darkColor);
+  color: var(--lightColor);
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: .4s;
+  padding: 12px 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.image-rotator-upload-portal > button:active {
+  transform: scale(.9);
+}

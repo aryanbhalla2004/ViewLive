@@ -1,0 +1,29 @@
+.manage-bb-content-box {
+  margin-top: 40px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.manage-bb-content-box > ul {
+  display: flex;
+  list-style-type: none;
+  user-select: none;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.manage-bb-content-box > ul > li {
+  display: flex;
+}
+
+.manage-bb-content-box > ul > li > a {
+  border: 1px solid var(--darkBorderColor);
+  text-decoration: none;
+  color: var(--lightTextColor);
+  padding: 5px 10px;
+  font-weight: 500;
+  font-size: .95rem;
+  cursor: pointer;
+  border-radius: 4px;
+}

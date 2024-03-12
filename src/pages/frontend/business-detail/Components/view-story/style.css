@@ -1,0 +1,43 @@
+.story-view-module-box {
+  max-width: 500px;
+  width: 100%;
+  background-color: #000;
+  border-radius: 4px;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 740px;
+  margin: 10px 0;
+  position: relative;
+}
+
+.story-view-module-box > video {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+
+.top-header-story-view-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  z-index: 100;
+  align-items: center;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,0.7875744047619048) 100%, rgba(0,0,0,0.7063419117647058) 100%);
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.top-header-story-view-absolute > button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.5rem;
+}

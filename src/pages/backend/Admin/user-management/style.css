@@ -1,0 +1,36 @@
+.user-management-table > tbody > tr, .user-management-table > thead {
+  display: grid;
+  grid-template-columns: 2.5fr 1.3fr 1.3fr 1.3fr 2fr !important;
+  width: 100%;
+}
+
+.user-management-table > thead > th {
+  width: 100%;
+}
+
+.user-manage-success {
+  color: var(--success) !important;
+  font-weight: 600;
+}
+
+.user-manage-suspended {
+  color: var(--danger) !important;
+  font-weight: 600;
+}
+
+.group-box {
+  font-size: .8rem;
+  border: 1px solid var(--darkBorderColor);
+  background-color: var(--darkBorderColor);
+  width: fit-content;
+  font-weight: 500;
+  color: var(--lightTextColor);
+  padding: 6px;
+  border-radius: 4px;
+}
+
+.admin-group {
+  border: 1px solid var(--primaryTransparent);
+  color: var(--primary);
+  background-color: var(--primaryTransparent);
+}

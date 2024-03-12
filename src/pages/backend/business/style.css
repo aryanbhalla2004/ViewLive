@@ -1,0 +1,153 @@
+.currentStatus-business-status {
+  border: 1px solid var(--lightColor);
+  display: flex;
+  border-radius: 5px;
+  gap: 20px;
+  padding: 10px 20px;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: var(--warning);
+}
+
+.accepted-status {
+  background-color: var(--success) !important;
+  color: var(--lightColor);
+}
+
+.rejected-status {
+  background-color: var(--danger) !important;
+  color: var(--lightColor);
+}
+
+.accepted-status > .icon-wait, .rejected-status > .icon-wait {
+  color: var(--darkColor)
+}
+
+.accepted-status > .icon-wait > i, .rejected-status > .icon-wait > i {
+  animation: none !important;
+}
+
+
+
+
+
+.currentStatus-business-status > .icon-wait {
+  border-radius: 50%;
+  background-color: var(--lightColor);
+  width: 55px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.currentStatus-business-status > .status-pending {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 2px;
+}
+
+.currentStatus-business-status > .status-pending > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.currentStatus-business-status > .status-pending > p {
+  font-weight: 300;
+}
+
+.currentStatus-business-status > .icon-wait > i {
+  transition: .3s;
+  font-size: 1.5rem;
+  animation: rotate 2.5s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) ;
+  }
+  50% {
+    transform: rotate(180deg) ;
+    
+  }
+  100% {
+    transform: rotate(360deg) ;
+  }
+}
+
+.container-for-managment-bb-business {
+  display: flex;
+  flex-direction: column;
+}
+
+.single-col-management-bb-business {
+  margin-bottom: 30px;
+}
+
+.single-col-management-bb-business > h3 {
+  font-weight: 300;
+  font-size: .95rem;
+}
+
+.inputs-holder-below-title-bb-business {
+  margin-top: 10px;
+  padding: 20px;
+  border: 1px solid var(--darkBorderColor);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.col-2-container-bgeneral-business, .col-3-container-bgeneral-business {
+  display: flex;
+  justify-content: center;
+}
+
+.col-3-container-bgeneral-business {
+  justify-content: space-between
+}
+
+.col-2-container-bgeneral-business > div {
+  width: 50%;
+}
+
+.col-3-container-bgeneral-business > div {
+}
+
+.single-item-in-bgeneral-business {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.single-item-in-bgeneral-business > span {
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.single-item-in-bgeneral-business > p {
+  font-weight: 400;
+  text-align: justify;
+  color: var(--darkColor);
+  line-height: 22px;
+}
+
+.resubmit-btn {
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+  color: var(--darkColor);
+  background-color: var(--lightColor);
+  border-radius: 3px;
+  transition: .3s;
+}
+
+.resubmit-btn:hover {
+  background-color: #e1e1e1;
+}

@@ -1,0 +1,73 @@
+.access-box-setting {
+  display: flex;
+  margin-bottom: 30px;
+  flex-direction: column;
+}
+
+.access-box-setting  > .table-of-items {
+  margin-top: 10px !important;
+  height: 400px;
+}
+
+.access-box-setting  > .table-of-items > tbody > tr {
+  border-bottom: 1px solid var(--darkBorderColor);
+}
+
+.access-table-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.access-table-header > div > h3 {
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.access-table-header > div > p {
+  font-weight: 300;
+  font-size: .9rem;
+}
+
+.access-button-setting > button{
+  background-color: var(--primary);
+  border: 1px solid var(--darkBorderColor);
+  padding: 15px 30px;
+  border-radius: 5px;
+  color: var(--lightColor);
+  font-size: .9rem;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.access-button-setting > button > p {
+  font-weight: 300 !important;
+}
+
+.location-management-setting-delete {
+  width: 50%;
+}
+
+.action-delete-location {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.location-management-setting-delete > p {
+  line-height: 25px;
+  font-size: .9rem;
+  margin-top: -5px;
+  font-weight: 300;
+}
+
+.action-delete-location > button {
+  background-color: var(--danger);
+  color: var(--lightColor);
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: .9rem;
+}

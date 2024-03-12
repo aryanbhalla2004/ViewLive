@@ -1,0 +1,37 @@
+.container-for-managment-bb {
+  display: flex;
+  flex-direction: column;
+}
+
+.single-col-management-bb {
+  margin-bottom: 30px;
+}
+
+.single-col-management-bb > h3 {
+  font-weight: 300;
+  font-size: .95rem;
+}
+
+.inputs-holder-below-title-bb {
+  margin-top: 10px;
+  padding: 20px;
+  border: 1px solid var(--darkBorderColor);
+  border-radius: 4px;
+}
+
+.file-view-container-admin-dashboard {
+  gap: 30px;
+  display: flex;
+}
+
+.file-view-container-admin-dashboard > div {
+  gap: 20px;
+  flex-direction: column;
+  display: flex;
+}
+
+.file-view-container-admin-dashboard > div > iframe {
+  height: 600px;  
+  width: 100%;
+  overflow: hidden;
+}

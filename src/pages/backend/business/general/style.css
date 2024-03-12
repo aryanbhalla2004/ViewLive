@@ -1,0 +1,16 @@
+.file-view-container-admin-dashboard {
+  gap: 30px;
+  display: flex;
+}
+
+.file-view-container-admin-dashboard > div {
+  gap: 20px;
+  flex-direction: column;
+  display: flex;
+}
+
+.file-view-container-admin-dashboard > div > iframe {
+  height: 600px;  
+  width: 100%;
+  overflow: hidden;
+}

@@ -1,0 +1,97 @@
+.pop-up-location-story-upload-container {
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column; 
+  position: relative;
+  align-items: center;
+  max-width: 500px;
+  text-align: center;
+  gap: 10px;
+}
+
+.pop-up-location-story-upload-container > p {
+  line-height: 25px;
+  font-weight: 300;
+}
+
+.upload-container-viewlive {
+  border: 1px dashed var(--secondary);
+  padding: 50px 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.upload-container-viewlive > i {
+  font-size: 3rem;
+  color: var(--secondary);
+}
+
+.upload-container-viewlive > div > label {
+  border: 1px solid var(--darkBorderColor);
+  margin-top: 20px;
+  gap: 10px;
+  display: flex;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 12px 20px;
+}
+
+.close-button-story-pop {
+  padding: 5px 25px !important;
+  border: 1px solid var(--darkBorderColor);
+  transition: .3s;
+  font-size: 1rem;
+ 
+  font-weight: 300;
+  width: fit-content;
+  background-color: transparent;
+  color: var(--primary);
+}
+
+.action-button-flex {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.prim-submit-button {
+  border: 1px solid var(--darkBorderColor);
+  transition: .3s;
+  font-size: 1rem;
+  padding: 5px 25px !important;
+  background-color: var(--primary) !important;
+  color: var(--lightColor) !important;
+}
+
+.danger-button {
+  color: var(--lightColor);
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1rem;
+  display: flex;
+  gap: 10px; 
+}
+
+.over-lay-loading-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .95);
+  padding: 20px;
+}

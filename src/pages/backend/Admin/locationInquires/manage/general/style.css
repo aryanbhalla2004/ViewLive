@@ -1,0 +1,5 @@
+.hours-key-amenties {
+  border: 1px solid;
+  display: flex;
+  justify-content: space-between;
+}

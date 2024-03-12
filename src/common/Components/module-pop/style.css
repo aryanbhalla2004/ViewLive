@@ -1,0 +1,42 @@
+.logout-main-container {
+  width: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  border: 1px solid;
+  height: 100vh;
+  z-index: 1000;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease-in-out; 
+}
+
+.logout-main-container > div {
+  animation: leave 0.3s ease forwards;
+  /* transform: scale(.8) translateY(200px) !important; */
+}
+
+.show-box-pop {
+  transition: .3s;
+  visibility: visible;
+  opacity: 1 !important;
+}
+
+.show-box-pop > div {
+  animation: drop 0.3s ease forwards;
+  /* transform: scale(1) !important; */
+}
+
+@keyframes drop {
+  0% {opacity: 0; transform: translateY(200px);}
+  100% {transform: translateY(0px); opacity: 1;}
+}
+
+@keyframes leave {
+
+  100% {transform: translateY(200px); opacity: 0;}
+}
