@@ -7,28 +7,51 @@ import { CreateReviewReplyInput, Review, ReviewReply as reviewReplyOBJ} from '..
 import { AccountContext } from '../../../../../setup/context-manager/AuthContext';
 import { DatabaseContext } from '../../../../../setup/context-manager/dbContext';
 import { createReviewReply } from '../../../../../graphql/mutations';
+import { v4 as uuidv4 } from 'uuid';
 
 interface props {
   review: Review | null,
-  setReview: (data: Review | null) => void, 
+  setReview: (data: any) => void, 
 }
 
 export const ReviewReply = (prop: props) => {
-  const {getUserProfile} = useContext(AccountContext);
+  const {getUserProfile, getUser} = useContext(AccountContext);
   const {pushDataUser} = useContext(DatabaseContext);
 
-  const onSubmit = async (e: any) => {
+  const onSubmit = async (e: React.BaseSyntheticEvent) => {
     e.preventDefault();
+    const data = new FormData(e.target);
+    const replyData:any = Object.fromEntries(data.entries()).reply || "";
 
-    if(prop.review === null) {
+    if(prop.review === null && getUser() != null) {
       return;
     }
+
     try {
+      const uid = uuidv4();
       const reply : CreateReviewReplyInput = {
-        description: "test reply to a comment tashdkas dkaklsd akshldasd asdasd",
-        ownerName: "Aryan Bhalla",
-        reviewID: prop.review?.id,
+        id: uid,
+        description: replyData,
+        ownerName: getUser()?.attributes?.given_name + " " + getUser()?.attributes?.family_name,
+        reviewID: prop.review?.id || "",
       }
+
+      const reviewReplyCreated: reviewReplyOBJ = {
+        ...reply,
+        __typename: "ReviewReply",
+        id: uid,
+        createdAt: new Date().toUTCString(),
+        updatedAt: "",
+        owner: getUser().username,
+      }
+
+      const tempReviewReply = prop.review?.ReviewReplies?.items;
+      tempReviewReply?.push(reviewReplyCreated);
+
+      prop.setReview((prev: Review) => {
+        return {...prev, ReviewReplies: {...prev.ReviewReplies, items: tempReviewReply}}
+      });
+
       const postReviewReply = await pushDataUser(createReviewReply, reply);
       console.log(postReviewReply);
     } catch (e) {
@@ -39,7 +62,7 @@ export const ReviewReply = (prop: props) => {
   return (
     <div className='reply-box-container'> 
       <button onClick={() => prop.setReview(null)} className='close-button-model'><i className="bi bi-x-lg"></i></button>
-      <ul className='list-of-review'>
+      <ul className='list-of-review reply-box-section'>
         <li>
           <div>
             <div className="profile-box-user-review" style={{ backgroundColor: prop.review && getUserProfile(prop.review.owner) }}>
@@ -95,10 +118,13 @@ export const ReviewReply = (prop: props) => {
        </div>
       </ul>
 
-      <form className='reply-form-box-action' onSubmit={onSubmit}>
-        <TextAreaInput placeholder='reply to @Aryan Bhalla' name="reply" type="test" label="" error="" />
-        <button>Reply</button>
-      </form>
+      {getUser() != null && <form className='reply-form-box-action' onSubmit={onSubmit}>
+        <aside className='current-user-post-reply' style={{ backgroundColor: prop.review && getUserProfile(getUser().username) }}>
+          {getUser()?.attributes?.given_name[0]}
+        </aside>
+        <TextAreaInput placeholder='Type your reply here...' name="reply" type="test" label="" error="" />
+        <button type='submit'>Reply <i className="bi bi-send"></i></button>
+      </form>}
     </div>
   )
 }

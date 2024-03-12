@@ -629,7 +629,7 @@ export const BusinessDetailPage = () => {
               <div className='create-review-button-action'>
                 <h3>Rate and review</h3>
                 <p>When it comes time to purchase a new computer, we don't consider other.</p>
-                {userProfile != null && <button onClick={e => setShowReviewBox(true)} className='create-review-button'><i className="bi bi-pencil-square"></i> Post Review</button>}
+                <button onClick={e => setShowReviewBox(true)} className='create-review-button'><i className="bi bi-pencil-square"></i> Post Review</button>
               </div>
               {/* {currentLocation?.Reviews?.items.length != undefined && currentLocation?.Reviews?.items.length > 0 ? <>
               <p className='start-location'><i className="bi bi-star-fill"></i> {currentLocation.avgRating?.toFixed(1)}</p>

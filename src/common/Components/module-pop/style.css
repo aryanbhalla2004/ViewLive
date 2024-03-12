@@ -1,7 +1,6 @@
 .logout-main-container {
   width: 100%;
   background-color: rgba(0, 0, 0, .5);
-  border: 1px solid;
   height: 100vh;
   z-index: 1000;
   display: flex;
